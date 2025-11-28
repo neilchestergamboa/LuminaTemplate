@@ -1,2 +1,7 @@
 [build]
+  # 1. Base directory: Tell Netlify to look inside the project folder first.
+  base = "Lumina-Ecom-Template-v1.0"
+  
+  # 2. Publish directory: Tell Netlify the website root is the 'html' folder,
+  #    but this path is now RELATIVE to the Base directory above.
   publish = "html"
