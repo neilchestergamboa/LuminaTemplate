@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina | Product Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+     <link rel="icon" type="image/png" href="/assets/images/shopping.png">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">LUMINA.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                   <ul class="navbar-nav mx-auto">
+    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+    <li class="nav-item"><a class="nav-link active" aria-current="page" href="shop.html">Shop</a></li>
+    <li class="nav-item"><a class="nav-link active" aria-current="page" href="shop.html">Collection</a></li>
+    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+</ul>
+                </ul>
+                <div class="d-flex icons">
+                    <a href="#" class="text-dark me-3"><i class="fas fa-search"></i></a>
+                    <a href="#" class="text-dark position-relative">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark cart-badge">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-light py-3">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-dark text-decoration-none">Men's Shoes</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Urban Sneakers</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="product-gallery">
+                        <div class="main-image mb-3 border">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" id="currentImg" class="img-fluid w-100" alt="Main Product">
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-3">
+                                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" class="img-fluid border thumbnail active-thumb" onclick="changeImage(this.src)">
+                            </div>
+                            <div class="col-3">
+                                <img src="https://images.unsplash.com/photo-1600185365926-3a810c9d5667?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" class="img-fluid border thumbnail" onclick="changeImage(this.src)">
+                            </div>
+                            <div class="col-3">
+                                <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" class="img-fluid border thumbnail" onclick="changeImage(this.src)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <h2 class="fw-bold">Urban Performance Sneakers</h2>
+                    <div class="mb-3">
+                        <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
+                        <span class="text-muted text-small ms-2">(24 Reviews)</span>
+                    </div>
+                    <h3 class="fw-bold mb-3">$120.00</h3>
+                    <p class="text-muted">Designed for the modern urban explorer. These sneakers feature breathable mesh, high-traction soles, and memory foam insoles for all-day comfort.</p>
+                    
+                    <hr class="my-4">
+
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-2">Color:</h6>
+                        <div class="d-flex">
+                            <div class="color-swatch bg-danger me-2 active-swatch"></div>
+                            <div class="color-swatch bg-dark me-2"></div>
+                            <div class="color-swatch bg-secondary me-2"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-2">Size:</h6>
+                        <div class="btn-group" role="group">
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                            <label class="btn btn-outline-dark rounded-0" for="btnradio1">7</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked>
+                            <label class="btn btn-outline-dark rounded-0" for="btnradio2">8</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                            <label class="btn btn-outline-dark rounded-0" for="btnradio3">9</label>
+                            
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                            <label class="btn btn-outline-dark rounded-0" for="btnradio4">10</label>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="input-group me-3" style="width: 130px;">
+                            <button class="btn btn-outline-secondary rounded-0" type="button" onclick="decrementValue()">-</button>
+                            <input type="text" class="form-control text-center border-secondary" id="number" value="1">
+                            <button class="btn btn-outline-secondary rounded-0" type="button" onclick="incrementValue()">+</button>
+                        </div>
+                        <button class="btn btn-dark btn-lg rounded-0 flex-grow-1 add-to-cart">Add to Cart</button>
+                    </div>
+
+                    <div class="text-muted text-small">
+                        <p class="mb-1"><span class="fw-bold text-dark">SKU:</span> SNK-001-RED</p>
+                        <p class="mb-1"><span class="fw-bold text-dark">Category:</span> Men, Shoes, Sport</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <ul class="nav nav-tabs border-0 mb-4 justify-content-center" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active text-dark fw-bold border-0 border-bottom border-dark" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc" type="button">Description</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link text-muted border-0" id="info-tab" data-bs-toggle="tab" data-bs-target="#info" type="button">Additional Info</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link text-muted border-0" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button">Reviews (24)</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content text-muted" id="myTabContent">
+                        <div class="tab-pane fade show active" id="desc">
+                            <p>Detailed description of the materials and design philosophy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="tab-pane fade" id="info">
+                            <table class="table table-bordered w-50">
+                                <tr>
+                                    <th class="bg-light">Weight</th>
+                                    <td>0.5 kg</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-light">Dimensions</th>
+                                    <td>10 x 10 x 15 cm</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="reviews">
+                            <p>No reviews yet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="text-center text-muted text-small">
+                <p>&copy; 2024 Lumina Theme. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina | Modern E-Commerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+     <link rel="icon" type="image/png" href="/assets/images/shopping.png">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">LUMINA.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <ul class="navbar-nav mx-auto">
+    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+</ul>
+                </ul>
+                <div class="d-flex icons">
+                    <a href="#" class="text-dark me-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="fas fa-search"></i></a>
+                    <a href="account.html" class="text-dark me-3"><i class="fas fa-user"></i></a>
+                    <a href="cart.html" class="text-dark position-relative">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark cart-badge">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section d-flex align-items-center text-center text-white">
+        <div class="container">
+            <h5 class="text-uppercase letter-spacing-2 mb-3">New Collection 2025</h5>
+            <h1 class="display-3 fw-bold mb-4">Minimalist Luxury</h1>
+            <a href="shop.html" class="btn btn-light btn-lg rounded-0 px-5">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <i class="fas fa-shipping-fast fa-2x mb-3 text-secondary"></i>
+                    <h5 class="fw-bold">Free Shipping</h5>
+                    <p class="text-muted text-small">On all orders over $100</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-undo fa-2x mb-3 text-secondary"></i>
+                    <h5 class="fw-bold">Easy Returns</h5>
+                    <p class="text-muted text-small">30-day money back guarantee</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-lock fa-2x mb-3 text-secondary"></i>
+                    <h5 class="fw-bold">Secure Payment</h5>
+                    <p class="text-muted text-small">100% protected payments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Trending Now</h2>
+                <p class="text-muted">Handpicked items just for you</p>
+            </div>
+            
+            <div class="row g-4" id="product-grid">
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Product">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-3">Sale</span>
+                            <div class="product-overlay">
+                                <button class="btn btn-light btn-sm rounded-circle shadow-sm" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                                <button class="btn btn-light btn-sm rounded-circle shadow-sm ms-2" title="Quick View"><i class="far fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h6 class="card-title"><a href="product.html" class="text-decoration-none text-dark">Minimalist Tee</a></h6>
+                            <p class="card-text text-muted mb-2">$35.00 <span class="text-decoration-line-through text-small ms-1">$50.00</span></p>
+                            <button class="btn btn-outline-dark btn-sm rounded-0 w-100 add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Product">
+                        </div>
+                        <div class="card-body text-center">
+                            <h6 class="card-title"><a href="product.html" class="text-decoration-none text-dark">Urban Sneakers</a></h6>
+                            <p class="card-text text-muted mb-2">$120.00</p>
+                            <button class="btn btn-outline-dark btn-sm rounded-0 w-100 add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Product">
+                        </div>
+                        <div class="card-body text-center">
+                            <h6 class="card-title"><a href="product.html" class="text-decoration-none text-dark">Audio Pro Headset</a></h6>
+                            <p class="card-text text-muted mb-2">$250.00</p>
+                            <button class="btn btn-outline-dark btn-sm rounded-0 w-100 add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Product">
+                            <span class="badge bg-dark position-absolute top-0 start-0 m-3">New</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <h6 class="card-title"><a href="product.html" class="text-decoration-none text-dark">Classic Shades</a></h6>
+                            <p class="card-text text-muted mb-2">$85.00</p>
+                            <button class="btn btn-outline-dark btn-sm rounded-0 w-100 add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">LUMINA.</h5>
+                    <p class="text-white-50 text-small">Premium e-commerce template for modern brands. Designed for quality and conversions.</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold mb-3">Shop</h6>
+                    <ul class="list-unstyled text-small">
+                        <li><a href="shop.html" class="text-white text-opacity-75 text-decoration-none">Men</a></li>
+                        <li><a href="shop.html" class="text-white text-opacity-75 text-decoration-none">Women</a></li>
+                        <li><a href="shop.html" class="text-white text-opacity-75 text-decoration-none">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold mb-3">Company</h6>
+                    <ul class="list-unstyled text-small">
+                        <li><a href="about.html" class="text-white text-opacity-75 text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-white text-opacity-75 text-decoration-none">Contact</a></li>
+                        <li><a href="#" class="text-white text-opacity-75 text-decoration-none">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h6 class="fw-bold mb-3">Newsletter</h6>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control rounded-0" placeholder="Your email">
+                        <button class="btn btn-light rounded-0" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-secondary pt-4 text-center text-white text-opacity-75 text-small">
+                <p>&copy; 2025 Lumina Theme. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-0 px-4 pb-4">
+                    <h5 class="modal-title fw-bold mb-3" id="searchModalLabel">What are you looking for?</h5>
+                    <form action="#" method="GET">
+                        <div class="input-group">
+                            <input type="search" class="form-control form-control-lg rounded-0" placeholder="Enter keywords or product names..." aria-label="Search">
+                            <button class="btn btn-dark rounded-0 px-4" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <small class="form-text text-muted mt-2">Try "Minimalist Tee" or "Urban Sneakers"</small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

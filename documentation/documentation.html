@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina E-commerce Template Documentation</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; margin: 40px; }
+        .container { max-width: 900px; margin: 0 auto; background: #fff; padding: 30px; border: 1px solid #ddd; }
+        h1, h2, h3 { color: #212529; border-bottom: 2px solid #eee; padding-bottom: 5px; margin-top: 20px; }
+        code { background: #f4f4f4; padding: 2px 4px; border-radius: 4px; font-size: 0.9em; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        .alert { padding: 15px; margin-bottom: 20px; border-radius: 4px; }
+        .alert-success { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .alert-warning { background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+        ul { list-style: disc; margin-left: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1 style="border-bottom: 4px solid #212529;">Lumina E-commerce Template Documentation</h1>
+        <p>Thank you for purchasing the Lumina E-commerce Template! This guide will help you get started quickly.</p>
+        <div class="alert alert-success">
+            <strong>Template Version:</strong> 1.0.0 | <strong>Built With:</strong> HTML5 & Bootstrap 5.3
+        </div>
+    </header>
+
+    <hr>
+
+    <section>
+        <h2>1. Project Structure 📁</h2>
+        <p>The template follows a clean, standardized folder structure for easy development and deployment.</p>
+        
+        <pre>
+Lumina-Template-v1.0/
+├── html/               <-- All 11 main HTML pages are here.
+├── assets/             <-- Use this folder for your custom images and media.
+├── css/
+│   └── style.css       <-- Custom styles and overrides.
+├── js/
+│   └── main.js         <-- Custom JavaScript logic.
+└── documentation/
+    └── documentation.html <-- This file!
+        </pre>
+        <div class="alert alert-warning">
+            <strong>Important!</strong> Since your HTML files are inside the <code>html/</code> folder, all file paths use <code>../</code> to reference assets (e.g., <code>&lt;link href="../css/style.css"&gt;</code>). Do not change this structure unless you update all paths.
+        </div>
+
+        <h3>Included Pages (11 Total)</h3>
+        <ul>
+            <li><code>index.html</code> (Home Page)</li>
+            <li><code>shop.html</code> (Product Listing)</li>
+            <li><code>product.html</code> (Single Product View)</li>
+            <li><code>cart.html</code> (Shopping Cart)</li>
+            <li><code>checkout.html</code> (Checkout Flow)</li>
+            <li><code>account.html</code> (User Login/Registration)</li>
+            <li><code>blog.html</code> (Blog Index)</li>
+            <li><code>post.html</code> (Single Blog Post)</li>
+            <li><code>about.html</code> (About Us)</li>
+            <li><code>contact.html</code> (Contact Form)</li>
+            <li><code>404.html</code> (Error Page)</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>2. Getting Started 🚀</h2>
+        <ol>
+            <li><strong>Unzip the Package:</strong> Extract the contents of the zip file to your local drive.</li>
+            <li><strong>Open the Home Page:</strong> Navigate to the <code>html/</code> folder and open <code>index.html</code> in your web browser to view the template.</li>
+            <li><strong>Start Editing:</strong> Use your favorite code editor to begin customizing the content of the HTML files.</li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>3. Customization Guide 🎨</h2>
+        
+        <h3>3.1. Navigation and Active State</h3>
+        <p>To highlight the current page in the navbar, use the Bootstrap classes <code>active</code> and <code>aria-current="page"</code> on the appropriate <code>&lt;a&gt;</code> tag.</p>
+        
+        <pre>
+&lt;!-- Example: The 'Shop' link is active on shop.html --&gt;
+&lt;li class="nav-item"&gt;
+    &lt;a class="nav-link active" aria-current="page" href="shop.html"&gt;Shop&lt;/a&gt;
+&lt;/li&gt;
+        </pre>
+        <p>The **Active State** style (dark underline) is defined in <code>css/style.css</code> and can be customized there.</p>
+
+        <h3>3.2. Search Modal</h3>
+        <p>The search icon does not link to a dedicated page. Instead, it triggers a **Bootstrap Modal** for an optimal user experience.</p>
+        <p>The modal HTML is located near the bottom of each HTML file, just before the closing <code>&lt;/body&gt;</code> tag.</p>
+
+        <h3>3.3. Favicon (Site Icon)</h3>
+        <p>The template is configured to use a favicon. Simply replace the placeholder file:</p>
+        <ul>
+            <li>**File to Replace:** <code>/favicon.png</code> (must be placed in the root folder, outside <code>html/</code>).</li>
+            <li>The link tag is already included in the <code>&lt;head&gt;</code> of all HTML files: <code>&lt;link rel="icon" type="image/png" href="../favicon.png"&gt;</code></li>
+        </ul>
+
+        <h3>3.4. Footer Links Visibility Fix</h3>
+        <p>The issue where footer links were invisible on the dark background has been corrected. The links now use <code>text-white text-opacity-75</code> for high contrast:</p>
+        <pre>
+&lt;ul class="list-unstyled text-small"&gt;
+    &lt;li&gt;&lt;a href="about.html" class="text-white text-opacity-75 text-decoration-none"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+        </pre>
+        
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>4. Dependencies </h2>
+        <p>The following external resources are used and linked via CDN in the <code>&lt;head&gt;</code> section of every page:</p>
+        <ul>
+            <li><strong>Bootstrap 5.3:</strong> <code>https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css</code></li>
+            <li><strong>Font Awesome 6:</strong> <code>https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css</code> (For all icons)</li>
+            <li><strong>Google Fonts (Poppins):</strong> <code>https://fonts.googleapis.com/css2?family=Poppins...</code></li>
+        </ul>
+        <p>The core JavaScript library is loaded at the end of the <code>&lt;body&gt;</code> for faster page loading:</p>
+        <pre>
+&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+        </pre>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p style="text-align: center; font-size: 0.8em; color: #777;">&copy; 2024 Lumina Theme. Thank you for your purchase.</p>
+    </footer>
+</div>
+
+</body>
+</html>

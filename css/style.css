@@ -1,0 +1,119 @@
+/* Core Typography */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar-brand {
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+.nav-link {
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+.cart-badge {
+    font-size: 0.6rem;
+    padding: 0.35em 0.5em;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Takes up 80% of viewport height */
+}
+.letter-spacing-2 {
+    letter-spacing: 2px;
+}
+
+/* Product Card */
+.product-card {
+    transition: all 0.3s ease;
+}
+.product-card:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    transform: translateY(-5px);
+}
+.product-card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Product Overlay Icons */
+.product-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.product-card:hover .product-overlay {
+    opacity: 1;
+}
+
+/* Buttons */
+.btn-outline-dark:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+/* Footer */
+footer a:hover {
+    color: #fff !important;
+}
+.text-small {
+    font-size: 0.85rem;
+}
+
+/* --- Single Product Page Styles --- */
+
+/* Thumbnails */
+.thumbnail {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+.thumbnail:hover, .active-thumb {
+    opacity: 1;
+    border-color: #000 !important;
+}
+
+/* Color Swatches (The Circles) */
+.color-swatch {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.active-swatch {
+    border: 2px solid #000;
+    transform: scale(1.1);
+}
+
+/* Tab Navigation */
+.nav-tabs .nav-link.active {
+    border-bottom: 2px solid #000 !important;
+}
+/* --- Cart Page Styles --- */
+.sticky-summary {
+    position: sticky;
+    top: 20px; /* Offset from the top of the viewport */
+}
+/* css/style.css */
+
+/* Customizing the active link appearance */
+.navbar-nav .nav-link.active {
+    /* Change the text color slightly to black */
+    color: #000 !important;
+    /* Add a subtle visual indicator like a bold underline */
+    border-bottom: 2px solid #212529; /* Using a dark color */
+    padding-bottom: 5px; /* Add some space above the line */
+}
